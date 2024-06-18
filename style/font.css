@@ -1,0 +1,42 @@
+/* Generate Anjoman Font */
+@font-face {
+    font-family: Anjoman-Regular;
+    src: url(../font/anjoman/Anjoman-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anjoman-Medium;
+    src: url(../font/anjoman/Anjoman-Medium.ttf);
+}
+
+@font-face {
+    font-family: Anjoman-SemiBold;
+    src: url(../font/anjoman/Anjoman-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Anjoman-Bold;
+    src: url(../font/anjoman/Anjoman-Bold.ttf);
+}
+
+@font-face {
+    font-family: Anjoman-ExtraBold;
+    src: url(../font/anjoman/Anjoman-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Anjoman-Heavy;
+    src: url(../font/anjoman/Anjoman-Heavy.ttf);
+}
+
+/* Generate Bardia Font */
+@font-face {
+    font-family: Bardiya;
+    src: url(../font/other/BBardiya.ttf);
+}
+
+/* Generate Bardia Font */
+@font-face {
+    font-family: Arshia;
+    src: url(../font/other/BARSHIA.TTF);
+}
