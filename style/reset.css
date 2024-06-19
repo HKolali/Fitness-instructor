@@ -62,9 +62,15 @@ table {
 	position: relative;
 }
 
+.particles-js-canvas-el{
+	position: absolute;
+	top: 0;
+}
+
 .leftSide {
     flex: 4;
-	z-index: -1;
+	position: relative;
+	z-index: 99;
 }
 
 .rightSide {
@@ -72,17 +78,5 @@ table {
     display: flex;
     justify-content: center;
     flex-direction: column;
-} 
-
-.menu {
-    width: 250px;
-	height: 500px;
-	position: absolute;
-	right: 0;
-	display: none;
-    align-items: center;
-    flex-direction: column;
-	height: 80vh;
-	margin-top: 10vh;
-
+	z-index: 99;
 } 

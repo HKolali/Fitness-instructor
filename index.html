@@ -4,43 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دکتر سینا فیت</title>
+    <title>دکتر سینا مومنی</title>
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
 <body>
-    <div class="menu">
-        <div class='MenuMobile'>
-            <img class='MenuMobileLogo' src="./image/logo-2.png" alt="logo" />
-            <div class="MenuMobileWrapper">
-                <!-- set menu from menu.js -->
-            </div>
+    <div class='menuMobile'>
+        <img class="closeMenuIcon" src="./image/menu-icon/close-option.png" alt="close menu icon">
+        <img class='menuMobileLogo' src="./image/logo-2.png" alt="logo" />
+        <div class="menuMobileWrapper">
+            <!-- set mobile menu from menu.js -->
         </div>
     </div>
-    <div class="app">
-        <div class="leftSide">
-            <img class="closeMenuIcon" src="./image/menu-icon/menu.png" alt="close menu icon">
-            <div class='HomeWrapper'>
-                <img class="sinaImage" src="./image/me/sina.png" alt="Dr. Sina Momeni" />
-                <div class='textWrapper'>
-                    <h1 class='HomeName'>من <span id='name'>دکتر سینا مومنی بروجنی</span> هستم</h1>
-                    <h2 class='HomeTitle'>داستان ورزشکار شدنت از اینجا شروع میشه</h2>
-                    <h3 class='HomeDescription'>اینجا میتونی با کمک یک مربی‌ حرفه‌ای به اندام ایده‌آل خودت برسی و ازش
-                        لذت ببری پس وقت رو از دست نده </h3>
+    <div id="particles-js">
+        <div class="app">
+            <div class="leftSide">
+                <img class="openMenuIcon" src="./image/menu-icon/menu.png" alt="open menu icon">
+                <div class='HomeWrapper'>
+                    <img class="sinaImage" src="./image/me/sina.png" alt="Dr. Sina Momeni" />
+                    <div class='textWrapper'>
+                        <h1 class='HomeName'>من <span id='name'>دکتر سینا مومنی بروجنی</span> هستم</h1>
+                        <h2 class='HomeTitle'>داستان ورزشکار شدنت از اینجا شروع میشه</h2>
+                        <h3 class='HomeDescription'>اینجا میتونی با کمک یک مربی‌ حرفه‌ای به اندام ایده‌آل خودت برسی و
+                            ازش
+                            لذت ببری پس وقت رو از دست نده </h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="rightSide">
-            <div class='MenuContainer'>
-                <img class='logo' src="./image/logo-2.png" alt="logo" />
-                <div class="menuWrapper">
-                    <!-- set menu from menu.js -->
+            <div class="rightSide">
+                <div class='MenuContainer'>
+                    <img class='logo' src="./image/logo-2.png" alt="logo" />
+                    <div class="menuWrapper">
+                        <!-- set main menu from menu.js -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <script src="./js/particles.js"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 
