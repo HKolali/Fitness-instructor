@@ -1,0 +1,138 @@
+@import "./reset.css";
+@import "./menu.css";
+
+.supplement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 50px;
+}
+
+.supplementWrap{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.supplementItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 2px #aaa;
+    margin: 10px;
+    background-color: var(--bg-100);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+
+.supplementContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.supplementImage{
+    filter: drop-shadow(5px 5px 5px #555);
+    width: 120px;
+    transform: rotate(15deg);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+
+.supplementItem:hover{
+    box-shadow: 0 2px 5px 2px var(--primary-50);
+}
+
+.supplementItem:hover .supplementImage{
+    scale: 1.05;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.supplementTitle{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.supplementDesc{
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .app{
+        overflow-y: scroll;
+    }
+    .services {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        z-index: 9999;
+        margin-right: 20px;
+    }
+
+    .serviceItem{
+        flex-basis: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 2px #aaa;
+        margin: 10px;
+        background-color: var(--bg-100);
+    }
+
+    .rightSection{
+        margin-top: 80px;
+    }
+
+    .leftSection{
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .services {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        z-index: 9999;
+        margin: 0px 5px;
+    }
+}
