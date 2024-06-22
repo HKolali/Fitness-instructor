@@ -1,14 +1,14 @@
 @import "./reset.css";
 @import "./menu.css";
 
-.supplement {
+.movement {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 30px 50px;
 }
 
-.supplementWrap{
+.movementWrap{
     height: fit-content;
     display: flex;
     align-items: center;
@@ -17,15 +17,15 @@
     flex-direction: row-reverse;
 }
 
-.supplementItem{
+.movementItem{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 300px;
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
     /* box-shadow: 0 2px 5px 2px #aaa; */
-    margin: 10px;
+    margin-top: 120px;
     background-color: var(--bg-200);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -39,26 +39,22 @@
     -o-transition: all 200ms ease-in;
 }
 
-.supplementContent{
+.movementContent{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.supplementImage{
+.movementImage{
     filter: drop-shadow(5px 5px 5px #555);
-    width: 140px;
-    transform: rotate(15deg);
+    width: 180px;
+    margin-top: -110px;
     border-radius: 10%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
     transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
@@ -66,27 +62,22 @@
     -o-transition: all 200ms ease-in;
 }
 
-.supplementItem:hover{
+.movementItem:hover{
     box-shadow: 0 2px 5px 2px var(--primary-50);
 }
 
-.supplementItem:hover .supplementImage{
-    scale: 1.05;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+.movementItem:hover .movementImage{
+    scale: 1.1;
 }
 
-.supplementTitle{
+.movementTitle{
     text-align: center;
     margin: 15px 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.supplementDesc{
+.movementDesc{
     font-size: 1.1rem;
     margin-top: 5px;
     text-align: center;
