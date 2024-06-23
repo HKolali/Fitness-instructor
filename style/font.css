@@ -40,3 +40,9 @@
     font-family: Arshia;
     src: url(../font/other/BARSHIA.TTF);
 }
+
+/* Generate skoda Font */
+@font-face {
+    font-family: Skoda;
+    src: url(../font/skoda/skoda-pro-medium.ttf);
+}

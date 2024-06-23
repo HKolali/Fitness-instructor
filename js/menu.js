@@ -15,35 +15,37 @@ const closeMenuIcon = document.querySelector(".closeMenuIcon")
 const menuMobile = document.querySelector(".menuMobile")
 const menuItem = document.getElementsByClassName("menuItem")
 
-window.addEventListener('load', () => {
-    
-    menu.forEach(element => {
-        menuWrapper.innerHTML +=                 
-        `
-        <a href=${element.to} class='link'>
-           <div class='menuItem'>
-               <span class='menuTitle'>${element.title}</span>
-               <img src=${element.icon} class='menuIcon'/>
-           </div>
-       </a>
-       `
-    })
+const page = window.location.pathname;
 
-    menu.forEach(element => {
-        menuMobileWrapper.innerHTML +=                 
-        `
-        <a href=${element.to} class='link'>
-           <div class='menuItem'>
-               <span class='menuTitle'>${element.title}</span>
-               <img src=${element.icon} class='menuIcon'/>
-           </div>
-       </a>
-       `
-    })
-
-    menuMobileWrapper.innerHTML +=                 
-        `<a href='' class='link'></a>`
+menu.forEach(element => {
+    menuWrapper.innerHTML +=                 
+    `
+    <a href=${element.to} class='link' onclick='slectedMenuItem(${element.id})'>
+       ${page === element.to ? `<div class='active'>
+           <span class='menuTitle'>${element.title}</span>
+           <img src=${element.icon} class='menuIcon'/>
+       </div>` : `<div class='menuItem'>
+           <span class='menuTitle'>${element.title}</span>
+           <img src=${element.icon} class='menuIcon'/>
+       </div>`}
+   </a>
+   `
 })
+
+menu.forEach(element => {
+    menuMobileWrapper.innerHTML +=                 
+    `
+    <a href=${element.to} class='link'>
+       <div class='menuItem'>
+           <span class='menuTitle'>${element.title}</span>
+           <img src=${element.icon} class='menuIcon'/>
+       </div>
+   </a>
+   `
+})
+
+menuMobileWrapper.innerHTML +=                 
+    `<a href='' class='link'></a>`
 
 openMenuIcon.addEventListener('click', () => {
     menuMobile.style.display = 'flex';
@@ -54,3 +56,13 @@ closeMenuIcon.addEventListener('click', () => {
     menuMobile.style.display = 'none';
     
 })
+
+function slectedMenuItem(selectedId) {
+    console.log('ID: ', selectedId);
+
+    menu.map(menuItem => {
+        if(menuItem.id === selectedId){
+            menuItem.isActive = true
+        }
+    })
+}

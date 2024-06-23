@@ -1,36 +1,37 @@
 @import "./reset.css";
 @import "./menu.css";
 
-.movement {
+.article {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 30px 50px;
 }
 
-.movementWrap{
+.articleWrap{
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    margin-bottom: 50px;
+    margin: 100px 0;
 }
 
-.movementItem{
+.articleItem{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    width: 250px;
-    border-radius: 50%;
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
     margin-top: 120px;
+    margin-bottom: 50px;
     background-color: var(--bg-200);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
     cursor: pointer;
     transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
@@ -39,45 +40,45 @@
     -o-transition: all 200ms ease-in;
 }
 
-.movementContent{
+.articleContent{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.movementImage{
+.articleImage{
     filter: drop-shadow(5px 5px 5px #555);
-    width: 180px;
-    margin-top: -110px;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    width: 250px;
+    margin-top: -120px;
+    border-radius:10px ;
     transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     -ms-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
 }
 
-.movementItem:hover{
+.articleItem:hover{
     box-shadow: 0 2px 5px 2px var(--primary-50);
 }
 
-.movementItem:hover .movementImage{
-    scale: 1.1;
+.articleItem:hover .articleImage{
+    /* scale: 1.1; */
 }
 
-.movementTitle{
+.articleTitle{
     text-align: center;
-    margin: 15px 0;
-    font-size: 1.2rem;
+    margin-top: 30px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.movementDesc{
+.articleDesc{
     font-size: 1.1rem;
     margin-top: 5px;
     text-align: center;

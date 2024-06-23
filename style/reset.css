@@ -60,7 +60,6 @@ table {
     height: 100vh;
     display: flex;
 	position: relative;
-	overflow-y: scroll;
 }
 
 .particles-js-canvas-el{
@@ -72,6 +71,8 @@ table {
     flex: 4;
 	position: relative;
 	z-index: 99;
+	overflow-y: auto;
+	direction: ltr;
 }
 
 .rightSide {
@@ -80,5 +81,9 @@ table {
     justify-content: center;
     flex-direction: column;
 	z-index: 99;
-	position: sticky;
 } 
+
+.leftSide::-webkit-scrollbar {
+	position: absolute;
+	left: 0;
+ }

@@ -37,7 +37,6 @@
     transition: 200ms ease;
     padding: 10px 15px;
     border-radius: 20px;
-
 }
 
 .menuItem:hover {
@@ -69,6 +68,15 @@
 }
 
 .active {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 200ms ease;
+    padding: 10px 15px;
+    border-radius: 20px;
     background-color: var(--primary-50) !important;
 }
 
@@ -98,8 +106,8 @@
 
 .closeMenuIcon {
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 20px;
     width: 40px;
     cursor: pointer;
 }
@@ -193,11 +201,27 @@
 @media screen and (max-width: 1300px) {
 
     .rightSide {
-        display: none;
+        display: none !important;
     }
 
     .openMenuIcon {
         display: flex;
+    }
+
+    .menuTitle {
+        color: var(--text-200);
+        font-size: 20px;
+        margin-right: 15px;
+        cursor: pointer;
+        color: var(--text-200);
+        font-family: Bardiya;
+    }
+    
+    .menuIcon {
+        color: var(--text-200);
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
     }
 }
 

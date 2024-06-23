@@ -1,0 +1,139 @@
+@import "./reset.css";
+@import "./menu.css";
+
+.nutrition {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.nutrition h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: -200px;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.nutritionWrap{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nutritionItem{
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #aaa;
+    margin: 10px;
+    background-color: var(--bg-100);
+}
+
+.nutritionItem:hover{
+    box-shadow: 2px 2px 10px #aaa;
+    cursor: pointer;
+}
+
+.nutritionItem:hover{
+    box-shadow: 2px 2px 10px #999;
+    cursor: pointer;
+}
+
+.nutritionImage{
+    filter: contrast(1) drop-shadow(5px 5px 5px #555);
+    width: 100px;
+    margin-top: 20px;
+}
+
+.nutritionTitle{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nutritionDesc{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .nutrition {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 9999;
+        margin-right: 20px;
+        margin-top: 500px;
+    }
+
+    .nutrition h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: -550px;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+    }
+
+    .nutrition h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: -200px;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+    }
+
+    .nutritionItem{
+        flex-basis: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 2px #aaa;
+        margin: 10px;
+        background-color: var(--bg-100);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nutrition {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 9999;
+        margin: 500px 5px;
+    }
+
+    .nutrition h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: -550px;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+    }
+
+    .nutritionImage{
+        width: 80px;
+    }
+}
