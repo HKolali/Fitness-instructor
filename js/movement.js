@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
     movement.forEach(element => {
         movementWrap.innerHTML +=                 
         `
-        <div class='movementItem'>
+        <div class='movementItem' onClick=showMovment(${element.id})>
             <div class='movementContent'>
                 <img class='movementImage' src=${element.image} alt=${element.title} />
                 <h3 class='movementTitle'>${element.title}</h3>
@@ -33,3 +33,8 @@ window.addEventListener('load', () => {
        `
     })
 })
+
+function showMovment(id){
+    console.log("ID Movment: ", id);
+    window.open(`../pages/services.html?id=${id}`);
+}
